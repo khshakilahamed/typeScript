@@ -1,6 +1,7 @@
 import { useCallback, useReducer, useRef } from 'react';
 import './App.css';
 import Lists from './components/Lists';
+import Practice from './components/Practice';
 
 // const Box: React.FunctionComponent<{title: string}> = ({title}) =>{
 //   return <div></div>
@@ -54,7 +55,7 @@ function App() {
       {/* <Box title='hello'>adkfjasdjf</Box> */}
       {/* <Lists></Lists> */}
 
-      <input type="text" ref={newTodoRef}/>
+      {/* <input type="text" ref={newTodoRef}/>
       <button onClick={onAddTodo}>Add</button>
       {
         todos.map((todo) => (
@@ -63,7 +64,9 @@ function App() {
             <button onClick={() => dispatch({type:'REMOVE', id: todo.id})}>Remove</button>
           </div>
         ))
-      }
+      } */}
+
+      <Practice></Practice>
     </div>
   );
 }
